@@ -3,6 +3,8 @@ package dev.nokore.motionalgorithms;
 import java.util.*;
 
 /**
+ * A* is an algorithm that will find the shortest path between two points or nodes in a graph
+ *
  *This implementation creates a 5x5 grid graph with nodes that have x and y coordinates.
  * The A* algorithm is run on this graph to find the shortest path from the top-left node
  * to the bottom-right node. The heuristic method calculates the Manhattan distance between
