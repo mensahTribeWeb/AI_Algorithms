@@ -1,5 +1,36 @@
 package dev.nokore.motionalgorithms;
 
+/**
+ *Rapidly-Exploring Random Trees (RRT) are a type of motion planning algorithm
+ * commonly used in robotics to plan the path of a robot in an environment.
+ *
+ * At a high level, the RRT algorithm works by randomly generating new nodes in the
+ * environment and connecting them to the nearest existing node in a tree structure.
+ * The tree represents a collection of potential paths that the robot could take
+ * from its starting position to its goal position. As new nodes are added to the
+ * tree, the path towards the goal becomes more refined and complete.
+ *
+ * In the context of using trees to represent the robot environment, each node in
+ * the tree represents a configuration of the robot, and the edges between nodes
+ * represent potential motions that the robot can make to move between those
+ * configurations. By building a tree of potential configurations and motions,
+ * the RRT algorithm can effectively explore the robot's environment and find a
+ * feasible path from the starting position to the goal position.
+ *
+ * Overall, the RRT algorithm and its tree-based representation of the robot
+ * environment provide a powerful tool for robot motion planning, and have been
+ * successfully used in a variety of robotics applications, including autonomous
+ * navigation, manipulation, and manufacturing.
+ *
+ * This implementation randomly generates new nodes in the environment and connects
+ * them to the nearest existing node in the tree. The tree is represented by a
+ * collection of nodes, where each node represents a configuration of the robot
+ * and the edges between nodes represent
+ *
+ * Here is an example implementation that uses the RRT algorithm to plan a path for
+ * a robot in a two-dimensional environment:
+ * */
+
 import java.util.*;
 
 public class RRT {
